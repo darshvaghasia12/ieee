@@ -1,0 +1,162 @@
+<hmtl>
+    <title>IEEE DEPSTAR SB</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="home.css">
+    </head>
+    <body>
+        <div class="main">
+    <header>
+        <div class="firsthead">
+            <nav>
+                <a href="https://www.ieee.org/" class="defaultnav">IEEE.org |</a>
+                <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" class="defaultnav">IEEE Xplore Digital Library | </a>
+                <a href="https://standards.ieee.org/" class="defaultnav"> IEEE Standards | </a>
+                <a href="https://spectrum.ieee.org/" class="defaultnav"> IEEE Spectrum | </a>
+                <a href="https://www.ieee.org/sitemap.html" class="defaultnav"> More Sites</a>
+            </nav>
+        </div>
+        <div class="secondhead">
+            <h1>IEEE Devang Patel Institute of Advanced Technology And Research Student Branch</h1>
+            <img src="IEEE_Depstar_SB_logo.png" class="logo">
+            <br><br><br><br><br>
+            <input type="text" placeholder="Search..">
+        </div>
+        <div class="thirdhead">
+            <nav>
+                <a href="#" class="navbar">Home</a>
+                <a href="#" class="navbar">Events</a>
+                <a href="#" class="navbar">Memberships</a>
+                <a href="#" class="navbar">Committee</a>
+                <a href="#" class="navbar"> Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <div  class="Slideshow-container">
+        <div class="imageSlideshow fade">
+            <img src="CSE_0049.jpg" style="width:100%">
+        </div>
+        <div class="imageSlideshow fade">
+            <img src="CSE_0087.jpg" style="width:100%">
+        </div>
+        <div class="imageSlideshow fade">
+            <img src="CSE_0043.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>   
+</div>
+<div class="animated animatedFadeInUp fadeInUp">
+<div class="intro">
+<br>
+<hr>
+<br>
+    <h1> WELCOME TO IEEE Student Branch of DEPSTAR</h1>
+    <p><i>IEEE Depstar Student Branch is an amalgamation of skillful and enthusiastic group of engineers from various departments of the institute. This student branch aims to provide an opportunity to proliferate students proficiency in technical aspects and to connect them to esteemed community of engineering professionals for creating a culture of Learning, Innovation and Creativity.</i></p>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+</div>
+</div>
+<div class="ieee">
+    <div class="perspective-text">
+        <div class="perspective-line">
+        <p></p>
+        <p>IEEE</p>
+        </div>
+        <div class="perspective-line">
+        <p>IEEE</p>
+        <p>DEPSTAR SB</p>
+        </div>
+        <div class="perspective-line">
+        <p>DEPSTAR SB</p>
+        <p>ADVANCING</p>
+        </div>
+        <div class="perspective-line">
+        <p>TECHNOLOGY</p>
+        <p>PROGESS</p>
+        </div>
+        <div class="perspective-line">
+        <p>UNITING</p>
+        <p></p>
+        </div>   
+    </div>
+</div>
+<br><br><br><br><br>
+<div class="addetails">
+    <div>
+        <h2>Address</h2>
+        <p>CHARUSAT Campus, Highway 139, Off,<BR> Nadiad – Petlad Road, Changa, Gujarat<br> 388421</p>
+    </div>
+</div>
+<br><br><br><br><br>
+<footer>
+    <div>
+        <br>
+        <nav>
+            <a href="#" class="footernav">HOME |</a>
+            <a href="#" class="footernav">SITEMAP |</a>
+            <a href="#" class="footernav">ACCESSIBILIY |</a>
+            <a href="#" class="footernav">NONDISCRIMINATION POLICY |</a>
+            <a href="#" class="footernav">TERMS AND CONDITIONS |</a>
+            <a href="#" class="footernav">IEEE PRIVACY POLICY |</a>
+        </nav>
+    </div>
+    <div class="copyright">
+        <br>
+        <p>
+            &copy Copyright 2020 IEEE – All rights reserved. Use of this website signifies your agreement to the IEEE Terms and Conditions.
+            A not-for-profit organization, IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+        </p>
+    </div>
+    </div>
+    <div class="footlogo">
+        <nav>
+            <a href="#" class="flogo"><img src="twitter.png" width=30px height=30px></a>
+            <a href="#" class="flogo"><img src="facebook.png" width=30px height=30px></a>
+            <a href="#" class="flogo"><img src="linkedin.png" width=30px height=30px></a>
+            <a href="#" class="flogo"><img src="youtube.png" width=30px height=30px></a>
+            <a href="#" class="flogo"><img src="insta.png" width=30px height=30px></a>
+            <a href="#" class="flogo"><img src="share.png" width="30px" height="30px"></a>
+        </nav>
+    </div>
+</footer>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+  var slides = document.getElementsByClassName("imageSlideshow");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script> 
+</div>  
+</body>
+</hmtl>
